@@ -1,0 +1,329 @@
+renamed_tables:
+  project_availability_exogenous: project_availability_exogenous_independent
+moved_tables:
+  project_portfolios:
+    from: project/portfolios
+    to: project/project_portfolios
+  transmission_portfolios:
+    from: transmission/portfolios
+    to: transmission/transmission_portfolios
+  project_availability_endogenous:
+    from: project/availability/endogenous
+    to: project/project_availability/project_availability_endogenous
+  project_load_zones:
+    from: project/load_zones
+    to: project/project_load_zones
+  geography_load_zones:
+    from: system/load_zones
+    to: system_load/load_zones
+  project_hydro_operational_chars:
+    from: project/opchar/hydro_opchar
+    to: project/project_hydro_operational_chars
+  system_load:
+    from: system/load
+    to: system_load/system_load
+  project_variable_generator_profiles:
+    from: project/opchar/var_profiles
+    to: project/project_variable_generator_profiles
+  project_specified_capacity:
+    from: project/specified/capacity
+    to: project/project_specified_capacity
+  transmission_load_zones:
+    from: transmission/load_zones
+    to: transmission/transmission_load_zones
+  transmission_operational_chars:
+    from: transmission/operational_chars
+    to: transmission/transmission_operational_chars
+  project_specified_fixed_cost:
+    from: project/specified/fixed_cost
+    to: project/project_specified_fixed_cost
+  project_availability:
+    from: project/availability
+    to: project/project_availability/project_availability_types
+  project_operational_chars:
+    from: project/opchar
+    to: project/project_operational_chars
+  transmission_specified_capacity:
+    from: transmission/specified_capacity
+    to: transmission/transmission_specified_capacity
+  project_startup_chars:
+    from: project/opchar/startup_chars
+    to: project/project_startup_chars
+new_tables:
+  fuel_prices:
+    create_empty: true
+  fuels:
+    create_empty: true
+  geography_carbon_cap_zones:
+    create_empty: true
+  geography_carbon_credits_zones:
+    create_empty: true
+  geography_carbon_tax_zones:
+    create_empty: true
+  geography_energy_target_zones:
+    create_empty: true
+  geography_frequency_response_bas:
+    create_empty: true
+  geography_fuel_burn_limit_balancing_areas:
+    create_empty: true
+  geography_lf_reserves_down_bas:
+    create_empty: true
+  geography_lf_reserves_up_bas:
+    create_empty: true
+  geography_local_capacity_zones:
+    create_empty: true
+  geography_performance_standard_zones:
+    create_empty: true
+  geography_prm_zones:
+    create_empty: true
+  geography_regulation_down_bas:
+    create_empty: true
+  geography_regulation_up_bas:
+    create_empty: true
+  geography_spinning_reserves_bas:
+    create_empty: true
+  geography_transmission_target_zones:
+    create_empty: true
+  project_availability_exogenous_weather:
+    create_empty: true
+  project_cap_factor_limits:
+    create_empty: true
+  project_capacity_group_requirements:
+    create_empty: true
+  project_capacity_groups:
+    create_empty: true
+  project_carbon_cap_zones:
+    create_empty: true
+  project_carbon_credits:
+    create_empty: true
+  project_carbon_credits_generation_zones:
+    create_empty: true
+  project_carbon_credits_purchase_zones:
+    create_empty: true
+  project_carbon_tax_allowance:
+    create_empty: true
+  project_carbon_tax_zones:
+    create_empty: true
+  project_cycle_selection:
+    create_empty: true
+  project_deliverability:
+    create_empty: true
+  project_elcc_chars:
+    create_empty: true
+  project_elcc_simple:
+    create_empty: true
+  project_elcc_surface:
+    create_empty: true
+  project_elcc_surface_cap_factors:
+    create_empty: true
+  project_energy_target_zones:
+    create_empty: true
+  project_flex_load_static_profiles:
+    create_empty: true
+  project_frequency_response_bas:
+    create_empty: true
+  project_fuel_burn_limit_balancing_areas:
+    create_empty: true
+  project_fuels:
+    create_empty: true
+  project_heat_rate_curves:
+    create_empty: true
+  project_lf_reserves_down_bas:
+    create_empty: true
+  project_lf_reserves_up_bas:
+    create_empty: true
+  project_local_capacity_chars:
+    create_empty: true
+  project_local_capacity_zones:
+    create_empty: true
+  project_new_binary_build_size:
+    create_empty: true
+  project_new_cost:
+    create_empty: true
+  project_new_potential:
+    create_empty: true
+  project_performance_standard_zones:
+    create_empty: true
+  project_prm_deliverability_costs:
+    create_empty: true
+  project_prm_deliverability_existing:
+    create_empty: true
+  project_prm_deliverability_multipliers:
+    create_empty: true
+  project_prm_deliverability_potential:
+    create_empty: true
+  project_prm_zones:
+    create_empty: true
+  project_regulation_down_bas:
+    create_empty: true
+  project_regulation_up_bas:
+    create_empty: true
+  project_relative_capacity_requirements:
+    create_empty: true
+  project_relative_capacity_requirements_map:
+    create_empty: true
+  project_spinning_reserves_bas:
+    create_empty: true
+  project_stor_exog_state_of_charge:
+    create_empty: true
+  project_supplemental_firing:
+    create_empty: true
+  project_variable_om_curves:
+    create_empty: true
+  system_carbon_cap_targets:
+    create_empty: true
+  system_carbon_cap_zones_carbon_credits_zones:
+    create_empty: true
+  system_carbon_credits_params:
+    create_empty: true
+  system_carbon_tax:
+    create_empty: true
+  system_carbon_tax_zones_carbon_credits_zones:
+    create_empty: true
+  system_frequency_response:
+    create_empty: true
+  system_frequency_response_percent:
+    create_empty: true
+  system_frequency_response_percent_lz_map:
+    create_empty: true
+  system_frequency_response_project:
+    create_empty: true
+  system_fuel_burn_limits:
+    create_empty: true
+  system_horizon_energy_target_load_zone_map:
+    create_empty: true
+  system_horizon_energy_targets:
+    create_empty: true
+  system_lf_reserves_down:
+    create_empty: true
+  system_lf_reserves_down_percent:
+    create_empty: true
+  system_lf_reserves_down_percent_lz_map:
+    create_empty: true
+  system_lf_reserves_down_project:
+    create_empty: true
+  system_lf_reserves_up:
+    create_empty: true
+  system_lf_reserves_up_percent:
+    create_empty: true
+  system_lf_reserves_up_percent_lz_map:
+    create_empty: true
+  system_lf_reserves_up_project:
+    create_empty: true
+  system_local_capacity_requirement:
+    create_empty: true
+  system_performance_standard:
+    create_empty: true
+  system_performance_standard_zones_carbon_credits_zones:
+    create_empty: true
+  system_period_energy_target_load_zone_map:
+    create_empty: true
+  system_period_energy_targets:
+    create_empty: true
+  system_prm_requirement:
+    create_empty: true
+  system_prm_zone_elcc_surface:
+    create_empty: true
+  system_prm_zone_elcc_surface_prm_load:
+    create_empty: true
+  system_regulation_down:
+    create_empty: true
+  system_regulation_down_percent:
+    create_empty: true
+  system_regulation_down_percent_lz_map:
+    create_empty: true
+  system_regulation_down_project:
+    create_empty: true
+  system_regulation_up:
+    create_empty: true
+  system_regulation_up_percent:
+    create_empty: true
+  system_regulation_up_percent_lz_map:
+    create_empty: true
+  system_regulation_up_project:
+    create_empty: true
+  system_spinning_reserves:
+    create_empty: true
+  system_spinning_reserves_percent:
+    create_empty: true
+  system_spinning_reserves_percent_lz_map:
+    create_empty: true
+  system_spinning_reserves_project:
+    create_empty: true
+  system_subsidies:
+    create_empty: true
+  system_subsidies_projects:
+    create_empty: true
+  system_transmission_targets:
+    create_empty: true
+  temporal_iterations:
+    create_empty: true
+  transmission_availability_exogenous:
+    create_empty: true
+  transmission_capacity_group_requirements:
+    create_empty: true
+  transmission_capacity_groups:
+    create_empty: true
+  transmission_carbon_cap_zones:
+    create_empty: true
+  transmission_flow:
+    create_empty: true
+  transmission_hurdle_rates:
+    create_empty: true
+  transmission_new_cost:
+    create_empty: true
+  transmission_new_potential:
+    create_empty: true
+  transmission_prm_capacity_transfer_params:
+    create_empty: true
+  transmission_prm_capacity_transfers:
+    create_empty: true
+  transmission_prm_zones:
+    create_empty: true
+  transmission_simultaneous_flow_limit_line_groups:
+    create_empty: true
+  transmission_simultaneous_flow_limits:
+    create_empty: true
+  tx_line_transmission_target_zones:
+    create_empty: true
+column_changes:
+  project/project_hydro_operational_chars:
+    renamed_columns: {}
+    dropped_columns:
+    - period
+    added_columns:
+    - hydro_iteration
+    - stage_id
+  system_load/system_load:
+    renamed_columns: {}
+    dropped_columns: []
+    added_columns:
+    - weather_iteration
+  project/project_variable_generator_profiles:
+    renamed_columns: {}
+    dropped_columns: []
+    added_columns:
+    - weather_iteration
+  project/project_availability/project_availability_types:
+    renamed_columns: {}
+    dropped_columns:
+    - exogenous_availability_scenario_id
+    added_columns:
+    - exogenous_availability_independent_scenario_id
+    - exogenous_availability_weather_scenario_id
+  project/project_availability/project_availability_exogenous:
+    renamed_columns:
+      availability_derate: availability_derate_independent
+      hyb_stor_cap_availability_derate: hyb_stor_cap_availability_derate_independent
+    dropped_columns: []
+    added_columns:
+    - availability_iteration
+scenario_changes:
+  renamed_keys:
+    project_carbon_credits_zone_scenario_id: project_carbon_credits_generation_zone_scenario_id
+    project_carbon_credits_scenario_id: project_carbon_credits_purchase_zone_scenario_id
+    carbon_credits_price_scenario_id: project_carbon_credits_scenario_id
+    period_transmission_target_scenario_id: transmission_target_scenario_id
+    of_period_transmission_target: of_transmission_target
+  new_rows:
+  - carbon_credits_params_scenario_id
