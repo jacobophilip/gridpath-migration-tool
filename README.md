@@ -1,2 +1,2 @@
 # gridpath-migration-tool
-Tool for migrating from one version to another in GridPath
+Tool for migrating input csv files of GridPath models from one version to another
