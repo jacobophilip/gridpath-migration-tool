@@ -49,7 +49,7 @@ The tool consists of two main scripts:
 gridpath-migration-tool/
 - inputs/
   - old_version/ # Place your OLD GridPath version input CSV files here
-  - new_version/ # Place your NEW GridPath version input CSV files here
+  - new_version/ # Place your NEW GridPath version example input CSV files here
 - migrated_output/ # The migrated version will be output here
 - detected_changes.py
 - detected_changes.yaml # The YAML file will be formed after running detected_changes.py
