@@ -44,6 +44,19 @@ The tool consists of two main scripts:
 - Ensures all migrated CSVs match the column structure of the target version.
 - Adds missing CSVs present in the new version but absent in the old version.
 
+## Folder Structure
+
+gridpath-migration-tool/
+│
+├── inputs/
+│ ├── old_version/ # Place your OLD GridPath version input CSV files
+│ ├── new_version/ # Place your NEW GridPath version input CSV files
+│
+├── migrated_output/ # The migrated version will be output here
+├── detected_changes.py
+├── detected_changes.yaml # The YAML file will be formed after running detected_changes.py
+├── migrate.py
+
 ---
 
 ## Installation
